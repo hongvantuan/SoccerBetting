@@ -5,4 +5,5 @@ const instance = new web3.eth.Contract(
   '0xeA06cBF54c183606F8Bb0b37026D0c26c60eB884'
 );
 
+// edit code
 export default instance;
