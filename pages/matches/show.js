@@ -121,7 +121,8 @@ class matchBetShow extends Component{
                     <Message  error={!this.state.claimStatus}
                               positive={this.state.claimStatus}
                               hidden={!this.state.claimErrorMessage}
-                              header="Oops!" content = {this.state.claimErrorMessage} />
+                              header={this.state.claimStatus ? "Message": "Oops!"}
+                              content = {this.state.claimErrorMessage} />
                     <Button loading ={this.state.claimLoading} color="orange" onClick={ (e) => this.handleClaim(e)}>Claim your reward</Button>
                 </Grid.Row>
               </Grid.Column>
